@@ -1,7 +1,6 @@
 import { WebContainer } from "@webcontainer/api";
 
 import { getGithubFilesTree } from "./gh";
-// import { files } from "./files";
 
 async function main() {
   const files = await getGithubFilesTree({
