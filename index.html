@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebContainers and Github</title>
+    <style>
+      .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        height: 1000px;
+      }
+    </style>
   </head>
 
   <body>
-    <iframe width="1000" height="1000" allow="cross-origin-isolated"></iframe>
+    <div class="two-column">
+      <div id="code-editor"></div>
+      <iframe allow="cross-origin-isolated"></iframe>
+    </div>
     <script type="module" src="/index.ts"></script>
   </body>
 </html>
