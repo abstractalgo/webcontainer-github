@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@webcontainer/api": "^1.1.0"
+    "@webcontainer/api": "^1.1.0",
+    "monaco-editor": "^0.36.1"
   },
   "scripts": {
     "dev": "vite",
@@ -11,6 +12,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.1.0"
+    "monaco-editor-auto-typings": "^0.4.3",
+    "vite": "^4.1.0",
+    "vite-plugin-monaco-editor": "^1.1.0"
   }
 }
