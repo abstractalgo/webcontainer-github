@@ -11,7 +11,9 @@ async function main() {
   });
 
   // setup webcontainer
-  const webcontainer = await WebContainer.boot();
+  const webcontainer = await WebContainer.boot({
+    coep: "credentialless",
+  });
   await webcontainer.mount(files);
   const install = await webcontainer.spawn("npm", ["install"]);
   install.output.pipeTo(
