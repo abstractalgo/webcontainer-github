@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@webcontainer/api": "^1.1.0"
+    "@codesandbox/nodebox": "^0.1.8",
+    "@webcontainer/api": "^1.1.5"
   },
   "scripts": {
     "dev": "vite",
