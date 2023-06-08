@@ -26,8 +26,8 @@ async function main() {
   await install.exit;
   await webcontainer.spawn("npm", ["run", "dev"]);
   webcontainer.on("server-ready", (port, url) => {
-    const iframe = document.getElementsByTagName(
-      "iframe"
+    const iframe = document.getElementById(
+      "webc-iframe"
     )[0] as HTMLIFrameElement;
     iframe.src = url;
   });
