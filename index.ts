@@ -10,7 +10,7 @@ async function main() {
     path: "map-sdk/v1/react/react-basic-example",
   });
 
-  // setup webcontainer
+  // set up webcontainer
   const webcontainer = await WebContainer.boot({
     coep: "credentialless",
   });
@@ -26,9 +26,7 @@ async function main() {
   await install.exit;
   await webcontainer.spawn("npm", ["run", "dev"]);
   webcontainer.on("server-ready", (port, url) => {
-    const iframe = document.getElementById(
-      "webc-iframe"
-    )[0] as HTMLIFrameElement;
+    const iframe = document.getElementById("webc-iframe") as HTMLIFrameElement;
     iframe.src = url;
   });
 }
